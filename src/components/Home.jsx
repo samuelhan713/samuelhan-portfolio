@@ -59,11 +59,15 @@ const Home = () => {
                     <a className="p-2" target="_blank" href="https://youtube.com/@Sammy_Han?si=lfbZMGOoi1jH_2SY">
                         <FaYoutube className="opacity-50 transition-opacity duration-200 ease-in-out hover:opacity-100" />
                     </a>
-                    {/* TODO: add email link */}
                 </ul>
-                <button className="relative gradient-border m-1 px-3 py-2 rounded-xl flex items-center justify-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white mt-10 px-5 py-3 md:px-10 md:py-6 text-xl">
-                    Send me an email
-                </button>
+                <div className="relative z-10 text-black top-6 flex flex-col items-start rounded-xl w-50 bg-white r shadow-lg shadow-sky-500 mt-4">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+                    </div>
+                    <button className="relative gradient-border rounded-xl flex items-center justify-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white px-5 py-3 md:px-10 md:py-6 text-xl transform hover:scale-105 duration-300">
+                        Send me an email
+                    </button>
+                </div>
+
             </div>
         </div>
     )
