@@ -13,7 +13,6 @@ const NavBar = () => {
 
                     <Marquee>
                         <span className='text-sm flex items-center gap-x-6'>
-
                             <div class="relative flex items-center jutify-center">
                                 <div class="h-3 w-3 absolute bg-green-400 rounded-full mr-2"></div>
                                 <div class="h-3 w-3 absolute bg-green-400 rounded-full mr-2 animate-ping"></div></div>
