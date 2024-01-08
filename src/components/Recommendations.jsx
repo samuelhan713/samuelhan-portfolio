@@ -2,8 +2,8 @@ import Marquee from 'react-fast-marquee';
 
 const Recommendations = () => {
     return (
-        <div className='mt-20'>
-            <div className="rfm-marquee-container mt-20" /* style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;" */>
+        <div className='mt-32'>
+            <div className="rfm-marquee-container" /* style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;" */>
                 <div class="rfm-overlay" style={{ "--gradient-color": 'white', "--gradient-width": "200px" }}>
                     {/* <div className='rfm-overlay::before'></div>
                         <div className='rfm-overlay::after'></div> */}

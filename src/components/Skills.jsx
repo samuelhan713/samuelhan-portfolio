@@ -75,7 +75,7 @@ const Skills = () => {
     ]
 
     return (
-        <div className="mt-20">
+        <div className="mt-32">
             <p>Skills</p>
             <div className="flex flex-wrap mt-4">
                 {skills.map((s) => (

@@ -3,10 +3,10 @@ import { IoIosJournal } from "react-icons/io";
 
 const Projects = () => {
     return (
-        <div className="mt-40">
+        <div className="mt-32">
             <h1>Projects</h1>
-            <div className="text-center mt-10 flex items-center">
-                <a href="https://www.logoarena.com/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
+            <div className="text-center mt-4 flex items-center">
+                <a href="https://mapbook-f381d1faf354.herokuapp.com/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
                     <div size="40" color="E0E6EB" class="go1550876186">
                         <span name="Shape35" color="2D3A46" size="20" role="img" class="go2599496350">
                             <FaEarthAmericas />
@@ -22,7 +22,7 @@ const Projects = () => {
                     </div>
 
                 </a>
-                <a href="https://www.logoarena.com/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
+                <a href="https://main--subtle-biscotti-65378e.netlify.app/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
                     <div size="40" color="E0E6EB" class="go1550876186">
                         <span name="Shape35" color="2D3A46" size="20" role="img" class="go2599496350">
                             <IoIosJournal />
