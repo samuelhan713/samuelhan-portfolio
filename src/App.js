@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Connect from "./components/Connect";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Projects />
       <Recommendations />
+      <Connect />
     </div>
   );
 }
