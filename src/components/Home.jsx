@@ -67,7 +67,6 @@ const Home = () => {
                         Send me an email
                     </button>
                 </div>
-
             </div>
         </div>
     )
