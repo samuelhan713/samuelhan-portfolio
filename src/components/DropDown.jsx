@@ -1,26 +1,28 @@
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const DropDown = ({ showMenu, setShowMenu }) => {
+const DropDown = () => {
     const navigate = useNavigate();
+    const [showMenu, setShowMenu] = useState(false);
 
     const links = [
         {
             id: 1,
             name: 'home',
-            url: './'
+            url: '/'
         }, {
             id: 2,
             name: 'about',
-            url: './about'
+            url: '/about'
         }, {
             id: 3,
             name: 'experience',
-            url: './experience'
+            url: '/experience'
         }, {
             id: 4,
             name: 'projects',
-            url: './projects'
+            url: '/projects'
         }
     ];
 

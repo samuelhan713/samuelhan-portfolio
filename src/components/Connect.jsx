@@ -1,6 +1,12 @@
 import './meteor.css';
 
 const Connect = () => {
+    const senderEmail = 'samuelhan.s713@gmail.com';
+
+    const handleComposeEmail = () => {
+        const mailtoLink = `mailto:${senderEmail}`;
+        window.open(mailtoLink, '_blank');
+    };
     return (
         <div className="my-10 w-full relative mt-20 py-20 bg-gray-50 rounded-2xl flex flex-col items-center text-center overflow-hidden">
             <div className="w-full">
@@ -48,15 +54,15 @@ const Connect = () => {
                     <div className='flex justify-between w-5/12 mt-5'>
                         <div className="relative z-10 text-black items-start rounded-xl w-38 bg-white r shadow-lg shadow-sky-500">
                             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                            <button class="relative gradient-border px-4 py-2 rounded-xl flex items-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
+                            <button onClick={handleComposeEmail} class="relative gradient-border px-4 py-2 rounded-xl flex items-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
                                 Send me an email
                             </button>
                         </div>
                         <div className="relative z-10 text-black items-start rounded-xl w-38 bg-white r shadow-lg shadow-sky-500">
                             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                            <button class="relative gradient-border px-4 py-2 rounded-xl flex items-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
+                            <a href='https://www.linkedin.com/in/samuel-seukhyun-han/' target='_blank' class="relative gradient-border px-4 py-2 rounded-xl flex items-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
                                 Connect on LinkedIn
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

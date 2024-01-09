@@ -3,6 +3,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 const Home = () => {
+    const senderEmail = 'samuelhan.s713@gmail.com';
+
+    const handleComposeEmail = () => {
+        const mailtoLink = `mailto:${senderEmail}`;
+        window.open(mailtoLink, '_blank');
+    };
+
     return (
         <div className="mt-12">
             <div className="p-2 md:p-0 flex flex-col items-center">
@@ -49,7 +56,7 @@ const Home = () => {
                         code.
                     </span>
                 </div>
-                <ul className="bg-gray-100 flex items-center justify-center p-1 rounded-3xl shadow-sm mt-5">
+                <ul className="bg-gray-100 flex items-center justify-center p-1 rounded-3xl shadow-sm mt-7">
                     <a className="p-2" target="_blank" href="https://github.com/samuelhan713">
                         <FaGithub className="opacity-50 transition-opacity duration-200 ease-in-out hover:opacity-100" />
                     </a>
@@ -63,7 +70,7 @@ const Home = () => {
                 <div className="relative z-10 text-black top-6 flex flex-col items-start rounded-xl w-50 bg-white r shadow-lg shadow-sky-500 mt-4">
                     <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
                     </div>
-                    <button className="relative gradient-border rounded-xl flex items-center justify-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white px-5 py-3 md:px-10 md:py-6 text-xl transform hover:scale-105 duration-300">
+                    <button onClick={handleComposeEmail} className="relative gradient-border rounded-xl flex items-center justify-center bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white px-5 py-3 md:px-10 md:py-6 text-xl transform hover:scale-105 duration-300">
                         Send me an email
                     </button>
                 </div>

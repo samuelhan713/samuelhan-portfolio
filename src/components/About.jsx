@@ -1,6 +1,17 @@
 import { FaDownload } from "react-icons/fa";
 
 const About = () => {
+
+    const handleDownloadResume = () => {
+        const pdfUrl = "Samuel-Han_Resume.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Samuel-Han_Resume.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <div className="mt-20">
             <div className="p-2 md:p-0 flex flex-col items-center">
@@ -18,7 +29,7 @@ const About = () => {
                             <div className="relative z-10 text-black flex flex-col items-start rounded-xl w-36 bg-white r shadow-lg shadow-sky-500">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
                                 </div>
-                                <button class="relative gradient-border px-4 py-2 rounded-xl flex items-center justify-between bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
+                                <button onClick={handleDownloadResume} class="relative gradient-border px-4 py-2 rounded-xl flex items-center justify-between bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white w-full text-base font-normal transform hover:scale-105 duration-300">
                                     <FaDownload />
                                     My resume
                                 </button>

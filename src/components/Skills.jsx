@@ -1,7 +1,3 @@
-import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
 const Skills = () => {
     const skills = [
         {
@@ -76,7 +72,7 @@ const Skills = () => {
 
     return (
         <div className="mt-32">
-            <p>Skills</p>
+            <p className="text-4xl">Skills</p>
             <div className="flex flex-wrap mt-4">
                 {skills.map((s) => (
                     <span class="w-100 mb-3 py-2 px-4 bg-gray-200 rounded-3xl mr-2 flex justify-between items-baseline text-2xl hover:scale-105 duration-300 cursor-pointer">

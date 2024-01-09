@@ -5,14 +5,14 @@ import React from 'react';
 import AboutPage from "./components/AboutPage";
 import ExperiencePage from "./components/ExperiencePage";
 import ProjectsPage from "./components/ProjectsPage";
-import { useState } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="text-3xl font-bold mx-auto max-w-5xl my-10 z-0">
       <Router>
-        <NavBar showMenu={showMenu} setShowMenu={setShowMenu} />
+        <NavBar />
+        <ScrollToTop />
         <div className="app">
           <Routes>
             <Route path="/" element={<Main />} />

@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import DropDown from './DropDown';
 import Marquee from 'react-fast-marquee';
+import { useNavigate } from "react-router-dom";
 
-const NavBar = ({ showMenu, setShowMenu }) => {
+const NavBar = () => {
+    const navigate = useNavigate();
     return (
         <div className='flex justify-between items-center w-full h-20 px-4 text-black bg-white'>
-            <div className='absolute w-screen h-screen'></div>
             <div>
-                <h1 className='text-1xl ml-2'>sam.</h1>
+                <h1 className='text-1xl ml-2 cursor-pointer' onClick={() => navigate('/')}>sam.</h1>
             </div>
             <div className="w-96 hidden md:block">
                 <div className="font-normal text-base rfm-marquee-container bg-gray-50 text-black p-2 rounded-full cursor-pointer border border-transparent hover:border hover:border-gray-200">
@@ -25,7 +26,7 @@ const NavBar = ({ showMenu, setShowMenu }) => {
                 </div>
             </div>
             <div className='place-items-center'>
-                <DropDown showMenu={showMenu} setShowMenu={setShowMenu} />
+                <DropDown />
             </div>
         </div>
     )
