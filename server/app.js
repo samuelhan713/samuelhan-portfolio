@@ -3,9 +3,12 @@ const app = express();
 const noteRoutes = require('./routes/note');
 const bodyParser = require('body-parser');
 const cors = require("cors");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://samuelhans713:PqBQtT0y1Ab8UOZo@samuelhan-portfolio.nnqprkv.mongodb.net/?retryWrites=true&w=majority', {});
+mongoose.connect(process.env.MONGO_CONNECTION, {});
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
