@@ -1,5 +1,6 @@
 export const API_BASE_URL = process.env.REACT_APP_API_ROOT;
 export const HOME_URL = process.env.REACT_APP_HOME_URL;
+const HOST_URL = "https://samuelhan-portfolio.onrender.com"
 
 const defaultHeaders = {
     headers: {
@@ -8,7 +9,7 @@ const defaultHeaders = {
 };
 
 export const getAllNotesAPI = () => {
-    const res = fetch(`${API_BASE_URL}/api/notes`, {
+    const res = fetch(`${HOST_URL}/api/notes`, {
         ...defaultHeaders,
         method: "GET",
     });
@@ -16,7 +17,7 @@ export const getAllNotesAPI = () => {
 };
 
 export const createNoteAPI = (note) => {
-    return fetch(`${API_BASE_URL}/api/createNotes`,
+    return fetch(`${HOST_URL}/api/createNotes`,
         {
             ...defaultHeaders,
             method: "POST",
