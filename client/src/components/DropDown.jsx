@@ -25,7 +25,7 @@ const DropDown = ({ showMenu, setShowMenu }) => {
         }, {
             id: 5,
             name: 'Note',
-            url: '/messages'
+            url: '/allMessages'
         }
     ];
 

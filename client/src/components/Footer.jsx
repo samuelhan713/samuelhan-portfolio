@@ -4,7 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="w-full relative mt-20 flex flex-col items-center text-center">
+        <div className="w-full relative mt-14 flex flex-col items-center text-center">
             <div className="flex flex-col md:flex-row items-center text-base font-normal">
                 <a className="mx-2 opacity-50 transition-opacity duration-200 ease-in-out hover:opacity-100" href="/">Home</a>
                 <a className="mx-2 opacity-50 transition-opacity duration-200 ease-in-out hover:opacity-100" href="/about">About</a>
