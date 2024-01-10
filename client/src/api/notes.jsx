@@ -8,7 +8,7 @@ const defaultHeaders = {
 };
 
 export const getAllNotesAPI = () => {
-    const res = fetch(`http://localhost:3001/api/notes`, {
+    const res = fetch(`${API_BASE_URL}/api/notes`, {
         ...defaultHeaders,
         method: "GET",
     });
@@ -16,7 +16,7 @@ export const getAllNotesAPI = () => {
 };
 
 export const createNoteAPI = (note) => {
-    return fetch(`http://localhost:3001/api/createNotes`,
+    return fetch(`${API_BASE_URL}/api/createNotes`,
         {
             ...defaultHeaders,
             method: "POST",
