@@ -23,6 +23,10 @@ const DropDown = () => {
             id: 4,
             name: 'projects',
             url: '/projects'
+        }, {
+            id: 5,
+            name: 'Note',
+            url: '/messages'
         }
     ];
 

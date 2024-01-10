@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const noteRoutes = require('./routes/note');
 const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+const cors = require("cors");
+
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://samuelhans713:PqBQtT0y1Ab8UOZo@samuelhan-portfolio.nnqprkv.mongodb.net/?retryWrites=true&w=majority', {});
 
@@ -12,6 +13,8 @@ db.once('open', () => {
     console.log('Connected to MongoDB');
 });
 
+app.use(bodyParser.json());
+app.use(cors());
 app.use('/api', noteRoutes);
 
 const PORT = process.env.PORT || 3001;

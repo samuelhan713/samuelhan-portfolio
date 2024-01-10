@@ -6,7 +6,7 @@ import AboutPage from "./components/AboutPage";
 import ExperiencePage from "./components/ExperiencePage";
 import ProjectsPage from "./components/ProjectsPage";
 import ScrollToTop from "./components/ScrollToTop";
-import MessagePage from "./components/MessagePage";
+import NotesPage from "./components/NotesPage";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/messages" element={<MessagePage />} />
+            <Route path="/messages" element={<NotesPage />} />
           </Routes>
         </div>
       </Router>

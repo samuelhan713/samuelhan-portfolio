@@ -18,8 +18,7 @@ const createNote = async (req, res) => {
             message,
         });
         const savedNote = await newNote.save();
-        console.log("social comment created successfully");
-
+        console.log("Note create successfully");
         return res.status(201).json(savedNote);
     } catch (err) {
         return res.status(500).json({ error: err.message });

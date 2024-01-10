@@ -8,7 +8,7 @@ const Connect = () => {
         window.open(mailtoLink, '_blank');
     };
     return (
-        <div className="my-10 w-full relative mt-20 py-20 bg-gray-50 rounded-2xl flex flex-col items-center text-center overflow-hidden">
+        <div className="my-10 w-full relative mt-24 py-20 bg-gray-50 rounded-2xl flex flex-col items-center text-center overflow-hidden">
             <div className="w-full">
                 <span class="pointer-events-none absolute left-1/2 top-1/2 h-0.5 w-0.5 rotate-[215deg] meteor rounded-[100px] bg-gray-500 shadow-[0_0_0_1px_#ffffff10]" style={{ top: '-5px', left: '500px', animationDelay: '0.354689s', animationDuration: '4s' }}>
                     <div class="pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-y-1/2 bg-gradient-to-r from-gray-500 to-transparent"></div></span>
