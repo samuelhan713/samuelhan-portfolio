@@ -70,13 +70,13 @@ const MessagePage = () => {
                 <div className="fixed overlay bg-black opacity-50 w-screen h-screen top-0 left-0 z-20"></div>
             )}
             <div className={`flex items-center z-30 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${successModal ? 'visible' : 'invisible'} opacity-100 transition-opacity duration-300 ease-in-out`}>
-                <div className="bg-white p-12 rounded shadow-md flex flex-col items-center justify-center">
+                <div className="bg-white px-12 py-10 rounded shadow-md flex flex-col items-center justify-center">
                     <p>
                         Thanks for your kind words!
                     </p>
                     <p className="text-sm mt-4 opacity-50">Your message has been successfully posted.</p>
                     <button
-                        className="text-base mt-8 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+                        className="text-base mt-12 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                         onClick={() => navigate('/')}
                     >
                         Return to Main Page
@@ -88,8 +88,8 @@ const MessagePage = () => {
                     <span class="md:ml-1 xl:ml-4 ml-4 text-5xl">Leave a public note about me!</span>
                 </div>
                 <form class="flex flex-col items-center mt-10 w-96 p-5 md:p-0" onSubmit={handleSubmit}>
-                    <input class="p-4 w-full m-2 bg-gray-100 rounded-md border-0 outline-none text-base font-normal" placeholder="Name" name="name" value={formData.name} onChange={handleInputChange} required />
-                    <input class="p-4 m-2 w-full border-0 bg-gray-100 rounded-md outline-none text-base font-normal" placeholder="Position" name="position" value={formData.position} onChange={handleInputChange} required />
+                    <input class="p-4 w-full m-2 bg-gray-100 rounded-md border-0 outline-none text-base font-normal" placeholder="Name" name="name" value={formData.name} onChange={handleInputChange} required autoComplete="off" />
+                    <input class="p-4 m-2 w-full border-0 bg-gray-100 rounded-md outline-none text-base font-normal" placeholder="Position" name="position" value={formData.position} onChange={handleInputChange} required autoComplete="off" />
                     <div class='flex flex-col relative max-w-sm w-full rounded-lg overflow-hidden mx-auto m-2'>
                         <textarea rows="4" maxLength="300" x-model="maximum" x-ref="maximum" placeholder="Say something nice..." name="message" value={formData.message} onChange={handleInputChange} required
                             className="block w-full mt-1 p-4 rounded-md shadow-sm focus:outline-none bg-gray-100 text-base font-normal z-0"></textarea>

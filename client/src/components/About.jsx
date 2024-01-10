@@ -1,6 +1,8 @@
 import { FaDownload } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+    const navigate = useNavigate();
 
     const handleDownloadResume = () => {
         const pdfUrl = "Samuel-Han_Resume.pdf";
@@ -14,9 +16,9 @@ const About = () => {
 
     return (
         <div className="mt-20">
-            <div className="p-2 md:p-0 flex flex-col items-center">
+            <div onClick={() => navigate('/about')} className="p-2 md:p-0 flex flex-col items-center">
                 <div className="mt-10 hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                    <div class="relative p-16 col-span-3 row-span-2 items-center bg-gray-50 rounded-2xl m-2 overflow-hidden hidden lg:flex">
+                    <div class="relative p-16 col-span-3 row-span-2 items-center bg-gray-50 rounded-2xl m-2 overflow-hidden hidden lg:flex hover:bg-gray-100">
                         <div class="flex flex-col gap-y-4 text-left w-3/6">
                             <h1 class="text-4xl font-semibold">About me</h1>
                             <p class="text-base font-normal text-gray-500 mt-4">

@@ -16,7 +16,7 @@ const Recommendations = () => {
 
     return (
         <div className='mt-28'>
-            <div className='rfm-marquee-container' onClick={() => navigate('/messages')}>
+            <div className='rfm-marquee-container' onClick={() => navigate('/allMessages')}>
                 <div class="rfm-overlay" style={{ "--gradient-color": 'white', "--gradient-width": "200px" }}></div>
                 <Marquee autoFill pauseOnHover>
                     <div className="marquee flex">

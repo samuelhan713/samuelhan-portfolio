@@ -5,7 +5,7 @@ import { CiChat1 } from "react-icons/ci";
 
 const ProjectsPage = () => {
     return (
-        <div className="mt-20 flex flex-col items-center">
+        <div className="mt-10 flex flex-col items-center">
             <h1 className="text-5xl">Projects</h1>
             <div className="mt-10 lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                 <a href="https://mapbook-f381d1faf354.herokuapp.com/" target="_blank" className="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
                             <CiChat1 />
                         </span>
                     </div>
-                    <h3 class="text-2xl mt-4 font-medium">Day Logger</h3>
+                    <h3 class="text-2xl mt-4 font-medium">Samcord</h3>
                     <p class="mt-2 opacity-50 font-light text-base">
                         Chat with others on Samcord.
                     </p>

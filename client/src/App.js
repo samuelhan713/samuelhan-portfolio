@@ -7,6 +7,7 @@ import ExperiencePage from "./components/ExperiencePage";
 import ProjectsPage from "./components/ProjectsPage";
 import ScrollToTop from "./components/ScrollToTop";
 import NotesPage from "./components/NotesPage";
+import AllNotes from "./components/AllNotes";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/experience" element={<ExperiencePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/messages" element={<NotesPage />} />
+            <Route path="/allMessages" element={<AllNotes />} />
           </Routes>
         </div>
       </Router>
