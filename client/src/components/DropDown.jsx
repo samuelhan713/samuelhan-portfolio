@@ -1,6 +1,5 @@
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const DropDown = ({ showMenu, setShowMenu }) => {
     const navigate = useNavigate();

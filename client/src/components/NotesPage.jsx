@@ -1,12 +1,11 @@
 import { createNoteAPI } from "../api/notes";
 import Footer from "./Footer";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 const MessagePage = () => {
     const navigate = useNavigate();
     const [successModal, setSuccessModal] = useState(false);
-    const [faileModal, setFailModal] = useState(false);
 
     const [formData, setFormData] = useState({
         name: '',
@@ -25,7 +24,6 @@ const MessagePage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
         setFormData({
             name: '',
             position: '',
@@ -35,8 +33,6 @@ const MessagePage = () => {
         const result = await createNoteAPI(formData);
         if (result) {
             setSuccessModal(true);
-        } else {
-            setFailModal(true);
         }
     };
 

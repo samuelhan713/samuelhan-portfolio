@@ -10,6 +10,7 @@ import NotesPage from "./components/NotesPage";
 import AllNotes from "./components/AllNotes";
 
 function App() {
+  document.title = "Samuel Han";
   return (
     <div className="text-3xl font-bold mx-auto max-w-5xl my-10 z-0">
       <Router>
