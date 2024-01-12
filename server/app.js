@@ -20,5 +20,13 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/api', noteRoutes);
 
+app.use(cors(
+    {
+        origin: ["https://samuelhan-portfolio-server.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
