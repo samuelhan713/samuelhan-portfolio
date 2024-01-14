@@ -14,6 +14,7 @@ const Experience = () => {
                             06/2023 ~ 08/2023
                         </span>
                     </div>
+                    <span className="text-sm font-normal text-gray-500">Wayne Inc. (startup)</span>
                     <span className="text-base font-normal mt-4">
                         Open source OS project contribution by reading and analyzing code written in <span className="font-bold">C++</span> and <span className="font-bold">python++</span> to test and identify defects on developing operating system.
                         <br></br>
@@ -31,6 +32,7 @@ const Experience = () => {
                             06/2022 ~ 09/2022
                         </span>
                     </div>
+                    <span className="text-sm font-normal text-gray-500">4STEC (startup)</span>
                     <span className="text-base font-normal mt-4">
                         Front end development in the RFID / IoT Records Management team: created the main page and subsidiary pages from scratch using <span className="font-bold">React, Cytoscape JS</span>, and <span className="font-bold">Material UI</span> for a railroad monitoring system, a B2B platform.
                         <br></br>

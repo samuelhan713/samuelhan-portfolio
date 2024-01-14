@@ -1,7 +1,9 @@
 export const API_BASE_URL = process.env.REACT_APP_API_ROOT;
 export const HOME_URL = process.env.REACT_APP_HOME_URL;
-// const HOST_URL = "https://samuelhan-portfolio.onrender.com"
+// render.com: const HOST_URL = "https://samuelhan-portfolio.onrender.com"
 const HOST_URL = "https://samuelhan-portfolio-server.vercel.app"
+const LOCAL_HOST = "http://localhost:3001";
+
 const defaultHeaders = {
     headers: {
         "Content-Type": "application/json; charset=UTF-8",
