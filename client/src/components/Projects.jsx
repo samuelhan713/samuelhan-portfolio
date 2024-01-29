@@ -44,22 +44,6 @@ const Projects = () => {
                         <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">Heroku</span>
                     </div>
                 </a>
-                <a href="https://main--subtle-biscotti-65378e.netlify.app/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
-                    <div size="40" color="E0E6EB" class="go1550876186">
-                        <span name="Shape35" color="2D3A46" size="20" role="img" class="go2599496350">
-                            <IoIosJournal />
-                        </span>
-                    </div>
-                    <h3 class="text-2xl mt-4 font-medium">Day Logger</h3>
-                    <p class="mt-2 opacity-50 font-light text-base">
-                        Keep track of your daily activities with Day Logger.
-                    </p>
-                    <div className="flex justify-between mt-4">
-                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">MERN</span>
-                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">MUI</span>
-                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">Netlify</span>
-                    </div>
-                </a>
             </div>
             <div className="flex flex-col items-center w-full">
                 <div className="relative z-10 text-black flex flex-col items-center rounded-xl w-36 bg-white r shadow-lg shadow-sky-500 h-10 mt-4">
