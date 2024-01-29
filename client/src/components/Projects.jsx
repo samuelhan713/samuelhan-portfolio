@@ -1,6 +1,7 @@
 import { FaEarthAmericas } from "react-icons/fa6";
 import { IoIosJournal } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import { CiBitcoin } from "react-icons/ci";
 
 const Projects = () => {
     const navigate = useNavigate();
@@ -9,6 +10,23 @@ const Projects = () => {
             <h1 className="text-4xl">Projects</h1>
             {/* <div className="text-center mt-4 flex items-center"> */}
             <div className="mt-4 lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <a href="https://github.com/samuelhan713/r-CryptoCurrency_Data_Analysis" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
+                    <div size="40" color="E0E6EB" class="go1550876186">
+                        <span name="Shape35" color="2D3A46" size="20" role="img" class="go2599496350">
+                            <CiBitcoin />
+                        </span>
+                    </div>
+                    <h3 class="text-2xl mt-4 font-medium">Reddit Cryptocurrency Recommender</h3>
+                    <p class="mt-2 opacity-50 font-light text-base">
+                        Get recommendations on which cryptocurrency to invest in using AI!
+                    </p>
+                    <div className="flex justify-between mt-4">
+                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">Python</span>
+                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">NLTK</span>
+                        <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">Sentiment Analysis</span>
+                    </div>
+                    <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1 mt-2">Random Forest</span>
+                </a>
                 <a href="https://mapbook-f381d1faf354.herokuapp.com/" target="_blank" class="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
                     <div size="40" color="E0E6EB" class="go1550876186">
                         <span name="Shape35" color="2D3A46" size="20" role="img" class="go2599496350">
