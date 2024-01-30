@@ -25,6 +25,7 @@ const ProjectsPage = () => {
                         <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1">Sentiment Analysis</span>
                     </div>
                     <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1 mt-2">Random Forest</span>
+                    <span class="text-sm py-2 px-4 bg-gray-200 rounded-3xl mr-1 mt-2">Machine Learning</span>
                 </a>
                 <a href="https://mapbook-f381d1faf354.herokuapp.com/" target="_blank" className="p-5 m-2 flex flex-col items-start bg-gray-50 rounded-3xl cursor-pointer hover:bg-gray-100 text-left hover:scale-105 duration-300">
                     <div size="40" color="E0E6EB" class="go1550876186 w-full">
