@@ -5,13 +5,14 @@ const About = () => {
     const navigate = useNavigate();
 
     const handleDownloadResume = () => {
-        const pdfUrl = "Samuel-Han_Resume.pdf";
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "Samuel-Han_Resume.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // const pdfUrl = "Samuel-Han_Resume.pdf";
+        // const link = document.createElement("a");
+        // link.href = pdfUrl;
+        // link.download = "Samuel-Han_Resume.pdf";
+        // document.body.appendChild(link);
+        // link.click();
+        // document.body.removeChild(link);
+        window.alert("This feature is disabled.")
     };
 
     return (
